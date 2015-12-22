@@ -1713,3 +1713,9 @@ class FakePubSub(object):
                 return None
 
         return message
+
+    def reset(self):
+        self.connection = None
+        self.channels = {}
+        self.patterns = {}
+
